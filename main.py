@@ -9,7 +9,7 @@ def ping_subprocess(reseau):
     
 # Parcours des adresses IP disponible dans le reseau
     for ip in reseau.hosts():
-        commande = ['ping', param, '1', str(ip)]
+        commande = ['ping', param, '4', str(ip)]
         resultat = subprocess.run(commande)
         print(resultat)
 
